@@ -1,0 +1,74 @@
+.gantt-chart {
+  margin-top: 2rem;
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  position: relative;
+  height: 60px;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow-x: hidden;
+}
+
+.gantt-task {
+  position: absolute;
+  height: 30px;
+  top: 15px;
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.gantt-task .task-title {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gantt-task .task-status {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.today-line {
+  position: absolute;
+  width: 2px;
+  background-color: #e74c3c;
+  height: 100%;
+  top: 0;
+}
+
+.today-line::after {
+  content: 'Today';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.timeline-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #7f8c8d;
+}
